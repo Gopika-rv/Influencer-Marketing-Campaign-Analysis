@@ -1,200 +1,174 @@
-# Influencer Marketing Campaign Performance Analysis
+# 📊 AI-Powered Influencer Marketing ROI Prediction System
 
-## Project Overview
-
-This project analyzes influencer marketing campaigns to evaluate platform performance, audience engagement, campaign effectiveness, revenue generation, and return on investment (ROI). The analysis helps marketing teams identify high-performing campaigns and optimize future marketing strategies.
+An end-to-end Machine Learning and Business Analytics project that predicts the **Return on Investment (ROI)** of influencer marketing campaigns using a **Random Forest Regressor**. The application includes an interactive **Streamlit web interface** and **Power BI dashboards** for business insights.
 
 ---
 
-## Problem Statement
+## 🚀 Project Overview
 
-Organizations invest heavily in influencer marketing campaigns across various social media platforms. However, determining which influencers, platforms, and campaign types generate the highest return remains challenging.
+This project helps marketing teams estimate the expected ROI of influencer campaigns before launching them. Users enter campaign details through a Streamlit web application, and the trained machine learning model predicts the expected ROI along with a business recommendation.
 
-This project aims to analyze influencer marketing data and provide actionable insights regarding campaign performance, engagement, reach, conversions, and profitability.
-
----
-
-## Dataset Description
-
-The dataset contains influencer marketing campaign information including:
-
-* Campaign ID
-* Platform
-* Influencer Category
-* Campaign Type
-* Engagements
-* Estimated Reach
-* Product Sales
-* Campaign Duration
-* Spend
-* Revenue
-* ROI
-* Engagement Rate
-* Conversions
-* Conversion Rate
+The project also includes Power BI dashboards for visual analysis of campaign performance and marketing trends.
 
 ---
 
-## Project Workflow
+## ✨ Features
 
-### Phase 1: Data Preparation
-
-* Data Cleaning
-* Missing Value Handling
-* Duplicate Removal
-* Feature Engineering
-
-### Phase 2: Exploratory Data Analysis
-
-* Platform Performance Analysis
-* Revenue Analysis
-* ROI Analysis
-* Engagement Analysis
-
-### Phase 3: Business Analytics
-
-* Platform vs Engagement
-* Campaign Cost vs ROI
-* Followers vs Reach
-* Audience Group vs Performance
-
-### Phase 4: Influencer Segmentation
-
-* High ROI Influencers
-* High Engagement Creators
-* Cost Efficient Campaigns
-* Influencer Category Analysis
-
-### Phase 5: Dashboard Development
-
-Developed interactive Power BI dashboards:
-
-1. Executive Overview Dashboard
-2. Influencer Analytics Dashboard
-3. Platform Performance Dashboard
-4. Financial Performance Dashboard
+- 🤖 AI-based ROI prediction using Machine Learning
+- 📊 Interactive Power BI dashboards
+- 🌐 User-friendly Streamlit web application
+- 📈 Business recommendations based on predicted ROI
+- 📋 Campaign summary before prediction
+- 🎯 Easy-to-use interface with dropdowns and input fields
 
 ---
 
-## Key Performance Indicators (KPIs)
+## 🛠️ Technologies Used
 
-### Total Campaign Spend
+### Programming
+- Python
 
-Total amount spent on influencer campaigns.
+### Libraries
+- Pandas
+- NumPy
+- Scikit-learn
+- Joblib
+- Streamlit
 
-### Total Revenue
+### Data Visualization
+- Power BI
 
-Total revenue generated from campaigns.
-
-### ROI (Return on Investment)
-
-ROI = ((Revenue - Spend) / Spend) × 100
-
-### Engagement Rate
-
-Engagement Rate = (Engagements / Reach) × 100
-
-### Conversion Rate
-
-Conversion Rate = (Conversions / Reach) × 100
-
-### Profit Generated
-
-Profit = Revenue - Spend
+### Machine Learning
+- Random Forest Regressor
 
 ---
 
-## Dashboard Screenshots
+## 📂 Project Structure
 
-### Executive Overview Dashboard
-
-(Add Screenshot Here)
-
-### Influencer Analytics Dashboard
-
-(Add Screenshot Here)
-
-### Platform Performance Dashboard
-
-(Add Screenshot Here)
-
-### Financial Performance Dashboard
-
-(Add Screenshot Here)
-
----
-
-## Key Findings
-
-* High-performing campaigns generated significantly higher ROI.
-* Platform effectiveness varied based on audience engagement.
-* Revenue contribution was concentrated among top-performing platforms.
-* Campaign spending alone did not guarantee higher ROI.
-* Engagement rate positively influenced campaign success.
-
----
-
-## Recommendations
-
-* Invest more in high ROI campaign categories.
-* Prioritize platforms with strong engagement and conversions.
-* Optimize underperforming campaigns.
-* Monitor campaign performance continuously.
-* Use data-driven marketing strategies for budget allocation.
-
----
-
-## Future Scope
-
-* Real-time campaign monitoring dashboard.
-* Machine Learning based ROI prediction.
-* Sentiment Analysis using social media comments.
-* Automated campaign recommendation system.
-* Streamlit-based web application deployment.
-
----
-
-## Tools & Technologies
-
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Power BI
-* Jupyter Notebook
-* GitHub
-
----
-
-## Repository Structure
-
-Influencer-Marketing-Campaign-Analysis/
-
-├── README.md
-
+```
+Influencer_ROI_Project/
+│
+├── app.py
 ├── requirements.txt
-
-├── Influencer_Campaign_Dataset.csv
-
-├── Influencer_Analysis.ipynb
-
-├── Influencer_Marketing_Dashboard.pbix
-
-├── screenshots/
-
-│ ├── Executive_Overview.png
-
-│ ├── Influencer_Analytics.png
-
-│ ├── Platform_Dashboard.png
-
-│ └── Financial_Dashboard.png
-
-└── Project_Report.pdf
+├── roi_prediction_model.pkl
+├── platform_encoder.pkl
+├── category_encoder.pkl
+├── campaign_encoder.pkl
+├── influencer_marketing_roi_dataset.csv
+├── dashboard1.png
+├── dashboard2.png
+├── dashboard3.png
+└── README.md
+```
 
 ---
 
-## Conclusion
+## 📊 Dataset Features
 
-This project demonstrates how data analytics and business intelligence tools can be used to evaluate influencer marketing performance, improve campaign effectiveness, maximize ROI, and support strategic decision-making.
+The model uses the following campaign attributes:
+
+- Platform
+- Influencer Category
+- Campaign Type
+- Engagements
+- Estimated Reach
+- Campaign Duration
+- Spend
+
+Target Variable:
+
+- ROI (Return on Investment)
+
+---
+
+## 🤖 Machine Learning Workflow
+
+1. Data Collection
+2. Data Preprocessing
+3. Label Encoding
+4. Train-Test Split
+5. Random Forest Model Training
+6. Model Evaluation
+7. ROI Prediction
+8. Deployment with Streamlit
+
+---
+
+## 📈 Model Performance
+
+Model: **Random Forest Regressor**
+
+Evaluation Metrics:
+
+- R² Score
+- Mean Absolute Error (MAE)
+
+The trained model predicts campaign ROI based on campaign characteristics and marketing metrics.
+
+---
+
+## 📊 Dashboard
+
+Power BI dashboards provide insights into:
+
+- ROI Analysis
+- Platform Performance
+- Campaign Performance
+- Spend vs Revenue
+- Influencer Category Analysis
+- Engagement Trends
+
+---
+
+## 🌐 Streamlit Application
+
+The application includes:
+
+- ROI Prediction Page
+- Dashboard Page
+- About Page
+- Business Recommendations
+
+---
+
+## ▶️ Run the Project
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+```
+
+Move into the project folder:
+
+```bash
+cd YOUR_REPOSITORY
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 👩‍💻 Developed By
+
+**Gopika R**
+
+B.Tech Information Technology
+
+Anna University
+
+---
+
+## 📜 License
+
+This project was developed for educational and internship purposes.
